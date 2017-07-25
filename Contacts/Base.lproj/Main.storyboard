@@ -246,36 +246,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-1" translatesAutoresizingMaskIntoConstraints="NO" id="JZ0-E8-YeQ">
-                                <rect key="frame" x="109" y="72" width="162" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-4" translatesAutoresizingMaskIntoConstraints="NO" id="PtI-1V-h45">
-                                <rect key="frame" x="22" y="247" width="337" height="238"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2X9-1m-r2V">
-                                <rect key="frame" x="334" y="64" width="41" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Image-5"/>
-                            </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ed9-wQ-j9T">
-                                <rect key="frame" x="35" y="503" width="311" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Icb-rf-OB3">
+                                <rect key="frame" x="16" y="107" width="343" height="425"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="425" id="g6g-Av-nGs"/>
+                                </constraints>
+                            </webView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ed9-wQ-j9T">
+                                <rect key="frame" x="62" y="540" width="251" height="29"/>
                                 <segments>
                                     <segment title="State Dept."/>
-                                    <segment title="Culture"/>
                                     <segment title="CDC"/>
+                                    <segment title="Culture"/>
                                 </segments>
+                                <connections>
+                                    <action selector="indexChange:" destination="pFE-YH-OHS" eventType="valueChanged" id="7Bw-Sh-XMe"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Icb-rf-OB3" firstAttribute="trailing" secondItem="1bx-Y7-6Y7" secondAttribute="trailingMargin" id="LSW-3K-Yyz"/>
+                            <constraint firstItem="Icb-rf-OB3" firstAttribute="leading" secondItem="1bx-Y7-6Y7" secondAttribute="leadingMargin" id="cSK-A8-AVl"/>
+                            <constraint firstItem="Icb-rf-OB3" firstAttribute="top" secondItem="QDs-it-7ZF" secondAttribute="bottom" constant="43" id="oo4-Nm-C0H"/>
+                            <constraint firstItem="Ed9-wQ-j9T" firstAttribute="top" secondItem="Icb-rf-OB3" secondAttribute="bottom" constant="8" symbolic="YES" id="vCe-8N-g3c"/>
+                            <constraint firstItem="Icb-rf-OB3" firstAttribute="centerX" secondItem="Ed9-wQ-j9T" secondAttribute="centerX" id="z3g-GT-qJQ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="hX0-v5-qM7"/>
+                    <connections>
+                        <outlet property="countrySC" destination="Ed9-wQ-j9T" id="nrX-DM-ocd"/>
+                        <outlet property="webView" destination="Icb-rf-OB3" id="yzS-Aa-Ux4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLK-iF-9Bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2004" y="122.78860569715144"/>
+            <point key="canvasLocation" x="2002.4000000000001" y="121.88905547226388"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wsz-cd-7Kl">
@@ -381,7 +388,6 @@
     </scenes>
     <resources>
         <image name="Image-1" width="500" height="118"/>
-        <image name="Image-4" width="270" height="180"/>
         <image name="Image-5" width="256" height="256"/>
         <image name="PersonPlaceholder" width="72" height="72"/>
     </resources>
