@@ -17,7 +17,6 @@
 		E8F6F6DD1F1E599F00945414 /* ContactsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F6F6D41F1E599F00945414 /* ContactsTableTableViewController.swift */; };
 		E8F6F6DE1F1E599F00945414 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F6F6D51F1E599F00945414 /* DetailViewController.swift */; };
 		E8F6F6DF1F1E599F00945414 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8F6F6D61F1E599F00945414 /* Info.plist */; };
-		E8F6F6E01F1E599F00945414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F6F6D71F1E599F00945414 /* ViewController.swift */; };
 		E8F6F6E51F1E7DF900945414 /* TripMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F6F6E41F1E7DF900945414 /* TripMapViewController.swift */; };
 		E8F6F6E71F1E86D000945414 /* CountryInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F6F6E61F1E86D000945414 /* CountryInfoViewController.swift */; };
 /* End PBXBuildFile section */
@@ -34,7 +33,6 @@
 		E8F6F6D41F1E599F00945414 /* ContactsTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableTableViewController.swift; sourceTree = "<group>"; };
 		E8F6F6D51F1E599F00945414 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E8F6F6D61F1E599F00945414 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8F6F6D71F1E599F00945414 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8F6F6E41F1E7DF900945414 /* TripMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TripMapViewController.swift; path = ../TripMapViewController.swift; sourceTree = "<group>"; };
 		E8F6F6E61F1E86D000945414 /* CountryInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +78,6 @@
 				E8F6F6D41F1E599F00945414 /* ContactsTableTableViewController.swift */,
 				E8F6F6D51F1E599F00945414 /* DetailViewController.swift */,
 				E8F6F6D61F1E599F00945414 /* Info.plist */,
-				E8F6F6D71F1E599F00945414 /* ViewController.swift */,
 				E8E0620B1F1FACC9003A9F7F /* ContactsNavBarViewController.swift */,
 			);
 			name = TripDashboard;
@@ -166,7 +163,6 @@
 				E887616D1F27ACE500C8D1EB /* MapDetails.swift in Sources */,
 				E8F6F6DC1F1E599F00945414 /* Contact.swift in Sources */,
 				E8F6F6E71F1E86D000945414 /* CountryInfoViewController.swift in Sources */,
-				E8F6F6E01F1E599F00945414 /* ViewController.swift in Sources */,
 				E8F6F6D81F1E599F00945414 /* AppDelegate.swift in Sources */,
 				E8F6F6DD1F1E599F00945414 /* ContactsTableTableViewController.swift in Sources */,
 				E8F6F6DE1F1E599F00945414 /* DetailViewController.swift in Sources */,

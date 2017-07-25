@@ -57,4 +57,7 @@ class CountryInfoViewController: UIViewController {
         let requestObj = URLRequest(url: webviewURL)
         webView.loadRequest(requestObj)
     }
+    override func awakeFromNib() {
+        self.tabBarItem.title = "Country Info"
+    }
 }

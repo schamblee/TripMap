@@ -13,6 +13,7 @@ class TripMapViewController: UIViewController {
     
     @IBOutlet weak var tripMap: MKMapView!
     
+    
     // set zoom
     let regionRadius: CLLocationDistance = 10000
     func centerMapOnLocation(location: CLLocation) {
@@ -56,6 +57,7 @@ class TripMapViewController: UIViewController {
         // set initial location
         let initialLocation = CLLocation(latitude: 18.8038360000, longitude: 98.9720810000)
         centerMapOnLocation(location: initialLocation)
+        
 
     }
 
